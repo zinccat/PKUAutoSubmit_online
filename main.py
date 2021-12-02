@@ -20,8 +20,7 @@ def go(config):
     capture = conf.getboolean('capture', '是否需要备案历史截图')
     path = conf['capture']['截图保存路径']
     wechat = conf.getboolean('wechat', '是否需要微信通知')
-    driver_pjs.manage().timeouts().pageLoadTimeout(300, TimeUnit.SECONDS);
-    driver_pjs.manage().timeouts().setScriptTimeout(300, TimeUnit.SECONDS);
+    driver_pjs.driver.set_page_load_timeout(300)
 
     run(driver_pjs, argconf.ID, argconf.PASSWORD, campus, argconf.MAIL_ADDRESS, argconf.PHONE_NUMBER, reason, detail, destination, track,
         habitation, district, street, capture, path, wechat, argconf.SENDKEY)
