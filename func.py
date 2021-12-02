@@ -183,7 +183,7 @@ def fill_out(driver, campus, mail_address, phone_number, reason, detail, destina
     print('Done')
 
     print('选择校区    ', end='')
-    select_campus(driver, campus)
+#     select_campus(driver, campus)
     print('Done')
 
     print('填写邮箱    ', end='')
@@ -224,7 +224,7 @@ def fill_in(driver, campus, mail_address, phone_number, reason, detail, habitati
     print('Done')
 
     print('选择校区    ', end='')
-    select_campus(driver, campus)
+#     select_campus(driver, campus)
     print('Done')
 
     print('填写邮箱    ', end='')
